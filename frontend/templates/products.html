@@ -1,0 +1,14 @@
+{% for product in productss %}
+<div class="card" style="width: 18rem;">
+  {% comment %} <img class="card-img-top" src="{{ product.image }}" alt="Card image cap"> {% endcomment %}
+  <div class="card-body">
+    <h5 class="card-title">{{ product.productname }}</h5>
+    <p class="card-text">{{ product.weight }}kg</p>
+    <p class="card-text">Price - {{ product.price }}</p>
+    <p class="card-text">CreatedAt - {{ product.created_time }}</p>
+    <p class="card-text">UpdatedAt - {{ product.modified_time }}</p>
+    
+    {% comment %} <a href="#" class="btn btn-primary">Buy Now</a> {% endcomment %}
+  </div>
+</div>
+{% endfor %}
